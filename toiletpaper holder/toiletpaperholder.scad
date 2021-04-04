@@ -34,7 +34,7 @@ module RollHolder(diameter,thickness,length,tpLength, innerRollDiameter) {
                     cylinderhollow(h=tpLength, r=innerRollDiameter/2, t = thickness, center = false);
                     cropX = innerRollDiameter/2;
                     translate([0-cropX/2,0-innerRollDiameter/2,0]) {
-                        #cube([cropX,innerRollDiameter/8,tpLength]);
+                        cube([cropX,innerRollDiameter/8,tpLength]);
                     }
                     //rotate(90-90) square(innerRollDiameter/2);
                 }
